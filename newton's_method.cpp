@@ -20,6 +20,11 @@ int main()
     cout<<"Ingrese la cantidad de pasos:";
     cin >> steps;
     
+    cout<< "\nDatos iniciales"<< endl;
+        cout<< "x" << " = " << x0 <<endl;
+        cout<< "f(x0)" << " = " << f(x0) <<endl;
+        cout<< "f'(x0)" << " = " << dfdx(x0) <<endl;
+    
     for(int i = 1; i <= steps; i++){
         x1 = x0 - ( f(x0) / dfdx(x0) );
         
